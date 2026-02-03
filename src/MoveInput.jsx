@@ -15,7 +15,7 @@ export default function MoveInput({ cubeGroup, rotationGroup, rotate }) {
       index++
 
       // wait slightly longer than animation duration (250ms)
-      setTimeout(nextMove, 250)
+      setTimeout(nextMove, 500)
     }
 
     nextMove()

@@ -14,6 +14,10 @@ export function executeMove(move, cubeGroup, rotationGroup, rotate) {
       rotate(cubeGroup.current, rotationGroup.current, 'x', -0.5, -1)
       break
 
+    case "L2'":
+      rotate(cubeGroup.current, rotationGroup.current, 'x', -0.5, -2)
+      break
+
     case 'R':
       rotate(cubeGroup.current, rotationGroup.current, 'x', 0.5, -1)
       break
