@@ -28,7 +28,7 @@ export default function TimerUI({ appState, timeMs, scrambleText, inspectionTime
   if (isReadyRed) timerGlow = '0 0 20px rgba(255, 77, 77, 0.4)';
   if (isReadyGreen || isRunning) timerGlow = cyberGlow;
 
-  const hintText = isMobile ? 'Tap & Hold to Inspect' : 'Tap Spacebar to Inspect';
+  const hintText = isMobile ? '' : 'Tap Spacebar to Inspect';
 
   return (
     <>
@@ -57,14 +57,7 @@ export default function TimerUI({ appState, timeMs, scrambleText, inspectionTime
         }
       `}</style>
 
-      {/* Full-screen touch layer for mobile timer control */}
-      {isMobile && (
-        <div
-          className="touch-layer"
-          onTouchStart={(e) => { e.preventDefault(); onTouchStart && onTouchStart(); }}
-          onTouchEnd={(e) => { e.preventDefault(); onTouchEnd && onTouchEnd(); }}
-        />
-      )}
+
 
       <div style={{
         position: 'absolute', inset: 0, pointerEvents: 'none', zIndex: 10,
@@ -79,15 +72,19 @@ export default function TimerUI({ appState, timeMs, scrambleText, inspectionTime
           paddingLeft: '24px', paddingRight: '24px',
         }}>
           {/* Main App Title */}
-          <div style={{
-            fontSize: '4em',
-            fontWeight: '900',
-            color: '#ffffff',
-            letterSpacing: '12px',
-            textTransform: 'uppercase',
-            marginBottom: '15px',
-            fontFamily: '"Cormorant Garamond", serif'
-          }}>
+          <div
+  className="main-title"
+  style={{
+    fontSize: isMobile ? '2.8rem' : '4em',
+    fontWeight: '900',
+    color: '#ffffff',
+    letterSpacing: isMobile ? '6px' : '12px',
+    textTransform: 'uppercase',
+    marginBottom: isMobile ? '8px' : '15px',
+    fontFamily: '"Cormorant Garamond", serif',
+    paddingTop: isMobile ? '35px' : '30px'
+  }}
+>
             CUBE IT
           </div>
 
@@ -107,24 +104,68 @@ export default function TimerUI({ appState, timeMs, scrambleText, inspectionTime
 
         {/* — IDLE: time display at bottom 1/3 — */}
         {isIdle && (
-          <div className="idle-timer-wrap" style={{
-            position: 'absolute', bottom: '120px', left: 0, right: 0,
-            display: 'flex', flexDirection: 'column', alignItems: 'center',
-            opacity: 1, transition: 'opacity 0.6s ease-in-out',
-            padding: '0 16px',
-          }}>
-            <div className="idle-timer" style={{
-              fontSize: '5.5rem', fontWeight: '900', color: '#00ff88',
-              fontVariantNumeric: 'tabular-nums', letterSpacing: '-2px',
-              fontFamily: '"Inter", sans-serif',
-            }}>
+          <div
+            className="idle-timer-wrap"
+            style={{
+              position: 'absolute',
+              bottom: '120px',
+              left: 0,
+              right: 0,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              opacity: 1,
+              transition: 'opacity 0.6s ease-in-out',
+              padding: '0 16px',
+            }}
+          >
+            {isMobile && (
+              <button
+                onClick={() => onTouchStart && onTouchStart()}
+                style={{
+                  marginBottom: '20px',
+                  padding: '10px 22px',
+                  borderRadius: '14px',
+                  border: 'none',
+                  background: 'rgba(255,255,255,0.08)',
+                  color: '#ffffff',
+                  fontSize: '0.9rem',
+                  fontWeight: '600',
+                  backdropFilter: 'blur(20px)',
+                  WebkitBackdropFilter: 'blur(20px)',
+                  cursor: 'pointer',
+                  pointerEvents: 'auto'
+                }}
+              >
+                Inspect
+              </button>
+            )}
+
+            <div
+              className="idle-timer"
+              style={{
+                fontSize: isMobile ? '4.5rem' : '5.5rem',
+                fontWeight: '900',
+                color: '#00ff88',
+                fontVariantNumeric: 'tabular-nums',
+                letterSpacing: '-2px',
+                fontFamily: '"Inter", sans-serif',
+              }}
+            >
               {formatTime(timeMs)}
             </div>
-            <div style={{
-              color: '#ffffff', fontSize: '0.75rem', marginTop: '12px',
-              textTransform: 'uppercase', letterSpacing: '3px', fontWeight: '600',
-              textAlign: 'center',
-            }}>
+
+            <div
+              style={{
+                color: '#ffffff',
+                fontSize: '0.75rem',
+                marginTop: '12px',
+                textTransform: 'uppercase',
+                letterSpacing: '3px',
+                fontWeight: '600',
+                textAlign: 'center',
+              }}
+            >
               {hintText}
             </div>
           </div>

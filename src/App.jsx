@@ -354,7 +354,10 @@ export default function App() {
   const handleTouchStart = useCallback(() => {
     const state = appStateRef.current
     if (state === 'IDLE' || state === 'STOPPED') {
-      setAppState('READYING_INSPECT')
+      setAppState('INSPECTING')
+      setInspectionTimeMs(15000)
+      inspectionStartTimeRef.current = performance.now()
+      inspectionIntervalRef.current = requestAnimationFrame(updateInspection)
     } else if (state === 'INSPECTING') {
       setAppState('READYING_RED')
       setCubeVisible(false)
