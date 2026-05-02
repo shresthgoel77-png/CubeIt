@@ -57,6 +57,20 @@ export default function TimerUI({ appState, timeMs, scrambleText, inspectionTime
         }
       `}</style>
 
+      {isMobile && (isInspecting || isReadyRed || isReadyGreen) && (
+        <div
+          className="touch-layer"
+          onTouchStart={(e) => {
+            e.preventDefault();
+            onTouchStart && onTouchStart();
+          }}
+          onTouchEnd={(e) => {
+            e.preventDefault();
+            onTouchEnd && onTouchEnd();
+          }}
+        />
+      )}
+
 
 
       <div style={{
@@ -73,18 +87,18 @@ export default function TimerUI({ appState, timeMs, scrambleText, inspectionTime
         }}>
           {/* Main App Title */}
           <div
-  className="main-title"
-  style={{
-    fontSize: isMobile ? '2.8rem' : '4em',
-    fontWeight: '900',
-    color: '#ffffff',
-    letterSpacing: isMobile ? '6px' : '12px',
-    textTransform: 'uppercase',
-    marginBottom: isMobile ? '8px' : '15px',
-    fontFamily: '"Cormorant Garamond", serif',
-    paddingTop: isMobile ? '35px' : '30px'
-  }}
->
+            className="main-title"
+            style={{
+              fontSize: isMobile ? '2.8rem' : '4em',
+              fontWeight: '900',
+              color: '#ffffff',
+              letterSpacing: isMobile ? '6px' : '12px',
+              textTransform: 'uppercase',
+              marginBottom: isMobile ? '8px' : '15px',
+              fontFamily: '"Cormorant Garamond", serif',
+              paddingTop: isMobile ? '35px' : '30px'
+            }}
+          >
             CUBE IT
           </div>
 
