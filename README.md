@@ -1,8 +1,14 @@
-<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/c8942715-1a43-47ae-8ec8-ecccfd213211" />
-<h1 align="center" id="chaatbazaar">CubeIt </h1>
-</p>
-<div align =center ><strong>The Next-Generation, 3D Interactive Speedcubing Suite</strong></div>
-<div align = center >A premium, blazing-fast Rubik's Cube timer with a built-in 3D visualizer, advanced statistics, and seamless offline capabilities.</div>
+<img width="1774" height="887" alt="image" src="https://github.com/user-attachments/assets/907bf369-bc39-4b23-aa3f-97cefe06946c" />
+<h1 align="center" id="chaatbazaar">CubeIt</h1>
+
+<div align="center">
+  <strong>The Next-Generation, 3D Interactive Speedcubing Suite</strong>
+</div>
+
+<div align="center">
+  A premium, blazing-fast Rubik's Cube timer with a built-in 3D visualizer,
+  advanced statistics, and seamless offline capabilities.
+</div>
 
 <p align="center">
   <a href="https://cube-it-app.netlify.app/">Live Link</a>
