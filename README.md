@@ -1,37 +1,118 @@
 <div align="center">
-  <h1>CUBEIT</h1>
-  <p><strong>The Next-Generation, 3D Interactive Speedcubing Suite</strong></p>
-  <p>A premium, blazing-fast Rubik's Cube timer with a built-in 3D visualizer, advanced statistics, and seamless offline capabilities.</p>
+  <img width="100%" alt="CubeIt Banner" src="https://raw.githubusercontent.com/vasanth642/CubeIt/main/public/CubeIt%20banner.png" />
 </div>
 
-<p align="center"><img width="399" height="398" alt="Screenshot 2026-04-14 161242" src="https://github.com/user-attachments/assets/a5c22da1-53bf-4387-9ca7-5acb88cdfd0d" /></p>
-<img width="1918" height="942" alt="Screenshot 2026-04-16 192953" src="https://github.com/user-attachments/assets/134b6d24-b1f8-4895-bb0b-10e12a5ce847" />
-<img width="1919" height="942" alt="image" src="https://github.com/user-attachments/assets/abc4310f-bc32-4a37-a0e3-c5c494d726d4" />
+<h1 align="center">CubeIt</h1>
 
-<h1>Mobile version</h1>
+<div align="center">
+  <strong>The Next-Generation, 3D Interactive Speedcubing Suite</strong>
+</div>
+
+<div align="center">
+  A premium, blazing-fast Rubik's Cube timer with a built-in 3D visualizer,
+  advanced statistics, and seamless offline capabilities.
+</div>
+
 <p align="center">
-  <img  height="400" height="1600" alt="image" src="https://github.com/user-attachments/assets/09f40083-fe03-4fa8-9dfb-ca5b66db9434" />
-  <img  height="400" alt="image" src="https://github.com/user-attachments/assets/226d666c-1014-4ff4-811b-6ed5185e307c" />
+  <a href="https://cube-it-app.netlify.app/">Live Link</a>
 </p>
 
+## 📑 Table of Contents
 
-## Why This Timer?
+- [About the Project](#about-the-project)
+- [Key Features](#key-features)
+- [Visual Showcase](#visual-showcase)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Documentation](#documentation)
+- [Contact](#contacts)
 
-Traditional cube timers are just static numbers on a screen. **CuboSapiens** reimagines the speedcubing experience with a highly polished, "Amethyst & Slate" dark mode UI, powered by modern 3D graphics. 
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
+
+<a name="about-the-project"></a>
+
+## 📖 About the Project
+
+Traditional cube timers are just static numbers on a screen. **CubeIt** reimagines the speedcubing experience with a highly polished, "Amethyst & Slate" dark mode UI, powered by modern 3D graphics.
 
 Watch a 3D Rubik's Cube perfectly mirror your randomly generated scrambles in real-time. Whether you are practicing your CFOP algorithms or striving for a new Personal Best, CubeIt provides a completely distraction-free, professional environment.
 
-##  Key Features
+**Core Highlights:**
+* **Interactive 3D Elements:** Built-in 3D visualizer using Three.js.
+* **Performance Tracking:** Advanced analytics including Ao5, Ao12, and PB tracking.
+* **Installable:** Fully functional offline via Progressive Web App (PWA) architecture.
 
-- **Real-Time 3D Visualizer:** Powered by React Three Fiber and Three.js, it translates WCA notation scrambles into smooth, animated 3D cube rotations.
-- **WCA-Compliant Timing:** Features a standard 15-second inspection phase, keyboard spacebar controls, and mobile tap-to-start precision.
-- **Advanced Analytics:** Automatically tracks and calculates your PB, Session Average, Ao5 (Average of 5), and Ao12 (Average of 12).
-- **Persistent Sessions:** All solves and statistics are securely saved in your browser's Local Storage. No database required.
-- **Responsive Design:** A beautifully unified interface that scales perfectly from 4K desktop monitors down to mobile screens with touch-optimized controls.
-- **Focus Mode:** UI elements gracefully fade away when the timer starts, allowing absolute concentration on the solve.
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
 
-## Progressive Web App (PWA) - Install It Locally!
+<a name="key-features"></a>
 
+## ✨ Key Features
+
+- 🎲 **Real-Time 3D Visualizer:** Powered by React Three Fiber and Three.js, it translates WCA notation scrambles into smooth, animated 3D cube rotations.
+- ⏱️ **WCA-Compliant Timing:** Features a standard 15-second inspection phase, keyboard spacebar controls, and mobile tap-to-start precision.
+- 📊 **Advanced Analytics:** Automatically tracks and calculates your PB, Session Average, Ao5 (Average of 5), and Ao12 (Average of 12).
+- 💾 **Persistent Sessions:** All solves and statistics are securely saved in your browser's Local Storage. No database required.
+- 📱 **Responsive Design:** A beautifully unified interface that scales perfectly from 4K desktop monitors down to mobile screens with touch-optimized controls.
+- 🎯 **Focus Mode:** UI elements gracefully fade away when the timer starts, allowing absolute concentration on the solve.
+
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
+
+<a name="tech-stack"></a>
+
+## 💻 Tech Stack
+
+Built with modern web and 3D technologies:
+* <img src="https://img.shields.io/badge/React_18-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React 18" />
+* <img src="https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white" alt="Three.js" />
+* <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+* <img src="https://img.shields.io/badge/Webpack-8DD6F9?style=flat-square&logo=webpack&logoColor=black" alt="Webpack" />
+* <img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js" />
+
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
+
+<a name="visual-showcase"></a>
+
+## 📸 Visual Showcase
+
+### Desktop Experience
+<div align="center">
+  <table style="border-collapse: collapse; width: 100%;">
+    <tr>
+      <th style="text-align: center;">Desktop Timer</th>
+      <th style="text-align: center;">Desktop Analytics</th>
+    </tr>
+    <tr>
+      <td align="center" width="50%">
+        <img width="100%" alt="Desktop Timer" src="https://github.com/user-attachments/assets/134b6d24-b1f8-4895-bb0b-10e12a5ce847" />
+      </td>
+      <td align="center" width="50%">
+        <img width="100%" alt="Desktop Analytics" src="https://github.com/user-attachments/assets/abc4310f-bc32-4a37-a0e3-c5c494d726d4" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+### Mobile Experience
+<div align="center">
+  <table style="border-collapse: collapse; width: 100%;">
+    <tr>
+      <td width="50%" align="center" valign="top">
+        <img width="70%" alt="Mobile Timer Interface" src="https://github.com/user-attachments/assets/09f40083-fe03-4fa8-9dfb-ca5b66db9434" />
+      </td>
+      <td width="50%" align="center" valign="top">
+        <img width="70%" alt="Mobile Analytics Interface" src="https://github.com/user-attachments/assets/226d666c-1014-4ff4-811b-6ed5185e307c" />
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
+
+<a name="getting-started"></a>
+
+## 🚀 Getting Started
+
+### 1. Progressive Web App (PWA) - Install It Locally!
 CubeIt is built as a highly optimized **Progressive Web App (PWA)**. This means you do not have to keep it as an open browser tab—you can install it directly onto your device!
 
 **Features of the PWA:**
@@ -44,18 +125,18 @@ CubeIt is built as a highly optimized **Progressive Web App (PWA)**. This means 
 2. Look for the **"Install App"** icon in the right side of the URL address bar, or select "Add to Home Screen" from your mobile browser's menu.
 3. Launch it directly from your device!
 
-## Getting Started (Development)
+### 2. Local Development
+Want to run CubeIt on your local machine to tinker with the code? It's easy!
 
-Want to run CubeIt on your local machine or contribute? It's easy!
-
-### Prerequisites
+**Prerequisites**
 - Node.js (v16.x or newer)
 - npm or yarn
 
-### Installation
+**Installation Steps**
+
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/CubeIt.git
+   git clone https://github.com/vasanth642/CubeIt.git
    cd CubeIt
    ```
 
@@ -76,21 +157,37 @@ Want to run CubeIt on your local machine or contribute? It's easy!
    ```
    This compiles the highly optimized static files into the `build/` directory, ready to be deployed to Vercel, Netlify, or GitHub Pages.
 
-## Technology Stack
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
 
-- **Core**: React 18
-- **3D Graphics**: Three.js, React Three Fiber (@react-three/fiber), React Three Drei (@react-three/drei)
-- **Animations**: Tween.js
-- **Styling**: Vanilla CSS with modern Glassmorphism and dynamic gradients.
-- **Tooling**: Webpack (via custom r3f-pack)
+<a name="documentation"></a>
 
-## 🤝 Contributing
+## 📚 Documentation
+
+### 🤝 Contributing
 Contributions are always welcome! Whether it is adding new themes, creating different puzzle types (2x2, Pyraminx), or optimizing the 3D performance. If you have a feature idea, feel free to open an Issue or submit a Pull Request.
 
----
-<div align="center">
-  <i>Built for speedcubers, by a speedcuber. Happy solving! 🏁</i>
-</div>
+<a name="contacts"></a>
 
-## 🙌 Credits
-The 3D Rubik’s Cube model used in this project is a modified version of the original work by **Sean Bradley**.
+## 🤝 Contacts
+
+| Source | Link |
+| :--- | :--- |
+| **GitHub Profile** | [vasanth642](https://github.com/vasanth642) |
+| **Project Repository** | [CubeIt](https://github.com/vasanth642/CubeIt) |
+
+### 🙌 Credits
+The 3D Rubik's Cube model used in this project is a modified version of the original work by **Sean Bradley**.
+
+<div align="center"><img src="https://placehold.co/100x3/9A1838/9A1838.png" width="10%" height="3px"><img src="https://placehold.co/100x3/B43E2C/B43E2C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/C56821/C56821.png" width="10%" height="3px"><img src="https://placehold.co/100x3/CE921C/CE921C.png" width="10%" height="3px"><img src="https://placehold.co/100x3/D0B92B/D0B92B.png" width="10%" height="3px"><img src="https://placehold.co/100x3/81A543/81A543.png" width="10%" height="3px"><img src="https://placehold.co/100x3/258C5A/258C5A.png" width="10%" height="3px"><img src="https://placehold.co/100x3/166B8E/166B8E.png" width="10%" height="3px"><img src="https://placehold.co/100x3/154BB2/154BB2.png" width="10%" height="3px"><img src="https://placehold.co/100x3/0E2A80/0E2A80.png" width="10%" height="3px"></div>
+
+<p align="center">
+  <b>Built for speedcubers, by a speedcuber. Happy solving! 🏁</b>
+  <br>
+  Don't forget to ⭐ star the repo if you like this project!
+</p>
+
+<img 
+    src="https://capsule-render.vercel.app/api?type=waving&color=0:9A1838,20:C56821,50:D0B92B,80:258C5A,100:0E2A80&height=100&section=footer&animation=fadeIn" 
+    width="100%" 
+    alt="Luxury Waving Footer" 
+/>
